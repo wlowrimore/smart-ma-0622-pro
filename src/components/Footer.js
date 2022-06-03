@@ -2,9 +2,9 @@ import React from "react";
 
 export default function () {
   return (
-    <footer className="footer">
-      <div className="line-position">
-        <h5 className="navbar-text">Made with patience</h5>
+    <footer>
+      <div>
+        <h3>made with React&trade; by William Lowrimore &copy; 2022</h3>
       </div>
     </footer>
   );
