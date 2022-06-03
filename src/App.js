@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import HomePage from "./components/HomePage";
+import AboutPage from "./components/AboutPage";
 
 function App() {
   const [currentTab, setCurrentTab] = useState("home");
@@ -13,7 +14,8 @@ function App() {
     switch (currentTab) {
       case "home":
         return <HomePage />;
-
+      case "about":
+        return <AboutPage />;
       default:
         return null;
     }

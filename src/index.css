@@ -103,24 +103,46 @@ body {
   font-size: 26px;
   letter-spacing: 2px;
   margin-top: 10px;
+  margin-bottom: 60px;
 }
 
 .start-btn {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   text-align: center;
   letter-spacing: 1px;
   color: var(--secondary-blue);
   background: transparent;
-  border: 1px solid silver;
+  border: 1px solid transparent;
   cursor: pointer;
 }
 
 .start-btn:hover {
   color: #000;
   background: transparent;
-  border: 1px solid silver;
+  border: 1px solid transparent;
   transition: .4s;
+}
+
+/* ____________________________ABOUT_____________________________ */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2rem 8rem;
+}
+
+.about h1 {
+  font-size: 32px;
+  padding: 0 8rem;
+}
+
+.about p {
+  font-size: 22px;
+  padding: 0 8rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 
 /* ____________________________FOOTER____________________________ */
