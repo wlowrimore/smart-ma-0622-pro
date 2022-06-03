@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./App.css";
+
+import Navbar from "./components/Navbar";
+import HomePage from "./components/HomePage";
 
 function App() {
   const [currentTab, setCurrentTab] = useState("home");
@@ -8,8 +11,8 @@ function App() {
     switch (currentTab) {
       case "home":
         return <HomePage />;
-      
-      default: 
+
+      default:
         return null;
     }
   };
