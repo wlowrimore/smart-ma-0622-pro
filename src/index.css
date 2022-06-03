@@ -5,22 +5,31 @@
 :root {
   --primary-blue: #1f14b3;
   --secondary-blue: #2811fa;
+  --btn-blue: #82b5f8;
   --large-shadow: 2px 2px 0px rgba(83, 81, 102, 0.4);
   --small-shadow: 1px 1px 0px rgba(83, 81, 102, 0.4);
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
 }
 
+/* __________________________HEADER/NAVBAR__________________________ */
+
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky; top: 0;
-  width: 100vw;
+  height: 100px;
+  width: 100%;
   background: silver;
 }
 
@@ -57,16 +66,61 @@ body {
 .nav-links li:hover {
   color: var(--secondary-blue);
   text-shadow: none;
-  top: 2px;
+  transition: .4s;
 }
 
 /* _____________________________HOME_____________________________ */
 
-#home {
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;;
+  background-image: url("./images/home-content-bg_edited.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#home h1 {
-  color: dodgerblue;
+
+.home-info {
+  text-align: center;
+}
+
+.home-info h1 {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #000;
+  text-shadow: var(--large-shadow);
+  border-bottom: 2px solid #000;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+}
+
+.home-info p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.start-btn {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--secondary-blue);
+  background: transparent;
+  border: 1px solid silver;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  color: #000;
+  background: transparent;
+  border: 1px solid silver;
+  transition: .4s;
 }
 
 /* ____________________________FOOTER____________________________ */
@@ -74,8 +128,8 @@ body {
 footer {
   display: flex;
   justify-content: center;
-  bottom: 0;
-  width: 100vw;
+  margin-top: 0;
+  width: 100%;
   background: silver;
 }
 
