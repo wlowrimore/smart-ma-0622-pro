@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-blue: #1f14b3;
+  --secondary-blue: #2811fa;
+  --large-shadow: 2px 2px 0px rgba(83, 81, 102, 0.4);
+  --small-shadow: 1px 1px 0px rgba(83, 81, 102, 0.4);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,10 +16,50 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky; top: 0;
   width: 100vw;
-  height: 400px;
-  background: #000;
+  background: silver;
 }
+
+.retroshadow {
+  padding: 0 40px;
+  font-size: 3.4rem;
+  font-weight: 300;
+  color: var(--primary-blue);
+  letter-spacing: .05em;
+  text-shadow: var(--large-shadow);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.nav-links ul {
+  display: flex;
+}
+
+.nav-links li {
+  display: flex;
+  color: var(--primary-blue);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-shadow: var(--small-shadow);
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: var(--secondary-blue);
+  text-shadow: none;
+  top: 2px;
+}
+
+/* _____________________________HOME_____________________________ */
 
 #home h1 {
   color: dodgerblue;
