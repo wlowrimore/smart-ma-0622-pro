@@ -26,7 +26,6 @@ function App() {
         return null;
     }
   };
-
   return (
     <div>
       <Navbar currentTab={currentTab} setCurrentTab={setCurrentTab} />
