@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
+import SignUpPage from "./components/SignUpPage";
 
 function App() {
   const [currentTab, setCurrentTab] = useState("home");
@@ -16,6 +17,8 @@ function App() {
         return <HomePage />;
       case "about":
         return <AboutPage />;
+      case "signup":
+        return <SignUpPage />;
       default:
         return null;
     }
