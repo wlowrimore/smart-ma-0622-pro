@@ -1,6 +1,6 @@
 import React from "react";
 
-function HomePage() {
+function HomePage(props) {
   return (
     <div className="home-content" id="home">
       <section className="home-info">

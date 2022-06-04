@@ -21,12 +21,13 @@ export default function SignUpPage() {
           placeholder="Last Name"
         ></input>
         <p className="email">Email</p>
-        <input type="email" name="email" id="email" placeholder="Email"></input>
+        <input type="email" name="email" id="signup-email" placeholder="Email"></input>
+        <p className="email-user">* Your email is your username</p>
         <p className="password">Password</p>
         <input
           type="password"
           name="password"
-          id="password"
+          id="signup-spassword"
           placeholder="Password"
         ></input>
         <p className="confirm">Confirm Password</p>

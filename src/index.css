@@ -187,6 +187,13 @@ body {
   margin-bottom: 4px;
 }
 
+.email-user {
+  font-size: 14px;
+  color: orangered;
+  font-style: italic;
+  margin-top: 0;
+}
+
 /* .qc {
   font-size: 14px;
   font-weight: 600;

@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
+import LoginPage from "./components/LoginPage";
 import SignUpPage from "./components/SignUpPage";
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         return <AboutPage />;
       case "signup":
         return <SignUpPage />;
+      case "login":
+        return <LoginPage />;
       default:
         return null;
     }
