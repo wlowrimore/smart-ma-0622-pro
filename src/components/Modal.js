@@ -12,7 +12,7 @@ const Modal = (props) => {
   }
 
   return (
-    <div className="modal" onClick={closeModal} style={divStyle}>
+    <div className="modal" style={divStyle}>
       <div className="modal-content">
         <span className="close" onClick={closeModal}>
           &times;
@@ -26,5 +26,3 @@ const Modal = (props) => {
 };
 
 export default Modal;
-
-

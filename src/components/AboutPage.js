@@ -31,9 +31,10 @@ export default function AboutPage() {
         <p>
           With "Melody Architect" your lyrics are translated into chord
           structures based on key words associated with feelings. You are then
-          be presented with these randomly generated structures. All you have to
-          do is arrange the chords in a way that works for you. You can even
-          transpose them to a different key signature if need be.
+          presented with these randomly generated structures. All you have to do
+          is arrange the chords in a way that works best for you. You can even
+          transpose your finished masterpiece to any key signature if you would
+          like.
         </p>
         <p>So, with that said...Let's go write a hit!</p>
       </article>

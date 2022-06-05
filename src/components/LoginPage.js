@@ -18,11 +18,12 @@ export default function LoginPage() {
           type="password"
           name="login-password"
           id="login-password"
-          placeholder="Password"
+          placeholder="password"
         ></input>
         <button className="sub-btn" id="sub-btn" type="submit">
           <FaTelegramPlane className="icon" />
         </button>
+        <h6>Not a member yet? Well, you should be!</h6>
       </form>
     </section>
   );
