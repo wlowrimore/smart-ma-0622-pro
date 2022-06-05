@@ -1,4 +1,5 @@
 import React from "react";
+import LoginPage from "../components/LoginPage";
 
 const Modal = (props) => {
   const divStyle = {
@@ -16,6 +17,9 @@ const Modal = (props) => {
         <span className="close" onClick={closeModal}>
           &times;
         </span>
+        <div className="login-container">
+          <LoginPage />
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,9 @@ class Homepage extends Component {
         <section className="home-info">
           <h1>Welcome to Melody Architect</h1>
           <p>an app designed with musicians in mind</p>
-          <p onClick={this.selectModal}>Let's Get Started</p>
+          <p className="start-btn" onClick={this.selectModal}>
+            Let's Get Started
+          </p>
           <Modal
             displayModal={this.state.modal}
             closeModal={this.selectModal}

@@ -11,7 +11,7 @@ export default function LoginPage() {
           type="email"
           name="login-email"
           id="login-email"
-          placeholder="First Name"
+          placeholder="email"
         ></input>
         <p className="password">Password</p>
         <input
@@ -20,7 +20,6 @@ export default function LoginPage() {
           id="login-password"
           placeholder="Password"
         ></input>
-        <p className="confirm">Confirm Password</p>
         <button className="sub-btn" id="sub-btn" type="submit">
           <FaTelegramPlane className="icon" />
         </button>
