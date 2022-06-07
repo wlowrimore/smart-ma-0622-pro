@@ -230,14 +230,15 @@ body {
   background: silver;
 }
 
-.icon {
+/* .icon {
+  padding: 8px;
   font-size: 30px;
   color: #fff;
 }
 
 .icon:hover {
   color: #000;
-}
+} */
 
 /* ____________________________FOOTER____________________________ */
 
@@ -354,7 +355,7 @@ fieldset {
 .forgot a {
   font-size: 18px;
   letter-spacing: 1px;
-  color: blue;
+  color: gold;
   text-decoration-line: none;
   text-align: center;
   margin: 0;
@@ -369,7 +370,7 @@ fieldset {
 
 .forgot a:hover,
 .no-member:hover {
-  color: #000;
+  color: skyblue;
   transition: .5s;
 }
 /* .modal-content a {
@@ -386,13 +387,32 @@ fieldset {
   transition: .3s;
 } */
 
+.login-here {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.login-here a {
+  color: gold;
+  text-decoration-line: none;
+  letter-spacing: 1px;
+}
+
+.login-here a:hover {
+  color: skyblue;
+  transition: .5s;
+}
+
 .form-btn {
   font-size: 30px;
   color: silver;
   background: #675b4c;
   border: 1px solid #675b4c;
-  border-radius: 8px;
-  width: 95%;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 0;
+  width: 93%;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -417,8 +437,8 @@ fieldset {
   background: maroon;
   border: 1px solid maroon;
   opacity: 60%;
-  border-radius: 8px;
-  margin-top: 10px;
+  border-radius: 4px;
+  margin-top: 18px;
   margin-left: 12px;
   padding: 4px;
   cursor: pointer;
@@ -484,3 +504,63 @@ input {
   padding: 6px 12px;
   margin-bottom: 18px;
 }
+
+/* ____________________________RESET__________________________ */
+
+.reset-form-container {
+  height: 100%;
+  text-align: center;
+}
+
+.back-to-login {
+  padding: 20px;
+  text-align: center;
+}
+
+.back-to-login a {
+  font-size: 22px;
+  color: gold;
+  letter-spacing: 1px;
+  text-decoration-line: none;
+}
+
+.back-to-login a:hover {
+  color: skyblue;
+  transition: .5s;
+}
+
+.reset-form {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 30px;
+}
+
+.reset-pw {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 8px 6px;
+}
+
+.reset-btn {
+  font-size: 30px;
+  color: silver;
+  background: #675b4c;
+  border: 1px solid #675b4c;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 0;
+  width: 93%;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.reset-btn:hover {
+  color: #000;
+  background: silver;
+  transition: .4s;
+}
+
+.reset-form-container {}
+
+  
+

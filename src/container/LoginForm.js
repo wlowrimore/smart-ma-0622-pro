@@ -36,16 +36,48 @@ class LoginForm extends Component {
   renderForgot = () => {
     return (
       <div>
-        <p>inside of forgot! :) </p>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            this.setMode("login");
-          }}
-        >
-          Back to login
-        </a>
+        <form className="reset-form-container">
+          <div className="reset-form"></div>
+          <fieldset>
+            <div className="form-group has-feedback required">
+              <label htmlFor="reset-pw" className="col-sm-5 reset-pw">
+                Update your password
+              </label>
+              <div className="col-sm-7">
+                <span
+                  className="form-control-feedback"
+                  aria-hidden="true"
+                ></span>
+                <input
+                  type="text"
+                  name="email"
+                  id="reset-email"
+                  className="form-control"
+                  placeholder="Enter your email"
+                  required
+                  value={this.state.email}
+                  onChange={this.onChange}
+                />
+              </div>
+              {/* console.log('error email ::: ' + JSON.stringify(errors)) */}
+            </div>
+          </fieldset>
+          <button type="submit" className="reset-btn">
+                <FaTelegramPlane />
+                <span className="icon-arrow-right2 outlined"></span>
+              </button>
+          <div className="back-to-login">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                this.setMode("login");
+              }}
+            >
+              Back to login
+            </a>
+          </div>
+        </form>
       </div>
     );
   };
@@ -55,15 +87,7 @@ class LoginForm extends Component {
       <div>
         <div>
           <form className="login-form-container">
-            <div className="login-form">
-              <button
-                type="button"
-                className="Close"
-                data-dismiss="alert"
-                aria-hidden="true"
-              ></button>
-              <span className="fw-semi-bold">Error:</span> Login failed.
-            </div>
+            <div className="login-form"></div>
             <fieldset>
               <div className="form-group has-feedback required">
                 <label htmlFor="login-email" className="col-sm-5">
@@ -113,20 +137,23 @@ class LoginForm extends Component {
             </fieldset>
             <div className="form-action">
               <button type="submit" className="form-btn">
-                Enter <span className="icon-arrow-right2 outlined"></span>
+                <FaTelegramPlane />
+                <span className="icon-arrow-right2 outlined"></span>
               </button>
             </div>
           </form>
         </div>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            this.setMode("login");
-          }}
-        >
-          Log in here
-        </a>
+        <div className="login-here">
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              this.setMode("login");
+            }}
+          >
+            Log in here
+          </a>
+        </div>
       </div>
     );
   };
@@ -185,7 +212,7 @@ class LoginForm extends Component {
                         this.setMode("forgot");
                       }}
                     >
-                      Forgot Password
+                      ( Forgot Password )
                     </a>
                   </div>
                 </div>
@@ -207,7 +234,7 @@ class LoginForm extends Component {
                 this.setMode("register");
               }}
             >
-              Not a member yet? Sign up!
+              Create an account
             </a>
           </div>
         </form>
@@ -230,7 +257,7 @@ class LoginForm extends Component {
                 ? "Login"
                 : this.state.mode === "register"
                 ? "Register"
-                : "Forgot Password"}
+                : "Password Reset"}
             </h2>
           </Modal.Header>
           <Modal.Body>
