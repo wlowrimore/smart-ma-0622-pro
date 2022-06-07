@@ -1,45 +1,54 @@
 import React, { Component } from "react";
-import Modal from "../components/Modal";
+import { render } from "react-dom";
+import LoginForm from "../container/LoginForm.js";
+import CreateNewAccount from "../container/CreateNewAccount.js";
 
-class Homepage extends Component {
-  state = {
-    modal: false,
+import {
+  NavDropdown,
+  MenuItem,
+  NavItem,
+  Nav,
+  Popover,
+  Tooltip,
+  Button,
+  Modal,
+  OverlayTrigger,
+} from "react-bootstrap";
+
+class HomePage extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showModal: false,
+      form: "",
+    };
+  }
+
+  close = () => {
+    this.setState({ showModal: false });
   };
-  selectModal = (info) => {
-    this.setState({ modal: !this.state.modal });
+
+  open = () => {
+    this.setState({ showModal: true });
   };
+
   render() {
+    const isLoggedIn = this.state.isLoggedIn;
+
     return (
-      <div className="home-content" id="home">
+      <main className="home-content">
         <section className="home-info">
           <h1>Welcome to Melody Architect</h1>
           <p>an app designed with musicians in mind</p>
-          <p className="start-btn" onClick={this.selectModal}>
-            Let's Get Started
-          </p>
-          <Modal
-            displayModal={this.state.modal}
-            closeModal={this.selectModal}
-          />
+
+          <Button type="text" className="start-btn" onClick={this.open}>
+            Let's Get Started!
+          </Button>
+          <LoginForm showModal={this.state.showModal} onClose={this.close} />
         </section>
-      </div>
+      </main>
     );
   }
-  // function HomePage(props) {
-  //   return (
-  //
-
-  //         <button
-  //           id="start-btn"
-  //           type="submit"
-  //           name="get started"
-  //           className="start-btn"
-  //         >
-  //           Let's Get Started
-  //         </button>
-  //       </section>
-  //     </div>
-  //   );
-  // }
 }
-export default Homepage;
+
+export default HomePage;

@@ -14,12 +14,12 @@ function Navbar(props) {
           <li className={currentTab === "about" ? "navActive" : "mx-2"}>
             <span onClick={() => setCurrentTab("about")}>About</span>
           </li>
-          <li className={currentTab === "signup" ? "navActive" : "mx-2"}>
+          {/* <li className={currentTab === "signup" ? "navActive" : "mx-2"}>
             <span onClick={() => setCurrentTab("signup")}>SignUp</span>
-          </li>
-          <li className={currentTab === "login" ? "navActive" : "mx-2"}>
+          </li> */}
+          {/* <li className={currentTab === "login" ? "navActive" : "mx-2"}>
             <span onClick={() => setCurrentTab("login")}>Contact</span>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
