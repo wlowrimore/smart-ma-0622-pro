@@ -212,7 +212,7 @@ class LoginForm extends Component {
                         this.setMode("forgot");
                       }}
                     >
-                      ( Forgot Password )
+                      I FORGOT MY PASSWORD
                     </a>
                   </div>
                 </div>
@@ -251,6 +251,11 @@ class LoginForm extends Component {
           onSubmit={this.onSubmit}
           bssize="large"
         >
+            <div className="close-btn-group">
+              <Button className="form-close-btn" onClick={this.props.onClose}>
+                X 
+              </Button>
+            </div>
           <Modal.Header closeButton={true}>
             <h2>
               {this.state.mode === "login"
@@ -260,6 +265,7 @@ class LoginForm extends Component {
                 : "Password Reset"}
             </h2>
           </Modal.Header>
+          
           <Modal.Body>
             {this.state.mode === "login"
               ? this.renderLogin()
@@ -268,9 +274,7 @@ class LoginForm extends Component {
               : this.renderForgot()}
           </Modal.Body>
           <Modal.Footer>
-            <Button className="form-close-btn" onClick={this.props.onClose}>
-              X
-            </Button>
+            
           </Modal.Footer>
         </Modal>
       </div>

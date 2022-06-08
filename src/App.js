@@ -38,21 +38,21 @@ class App extends Component {
 
   render() {
     const isLoggedIn = this.state.isLoggedIn;
-    const renderTab = () => {
-      // const [currentTab, setCurrentTab] = useState("home");
-      // switch (currentTab) {
-      //   case "home":
-      //     return <HomePage />;
-      //   case "about":
-      //     return <AboutPage />;
-      //   case "signup":
-      //     return <SignUpPage />;
-      //   case "login":
-      //     return <LoginPage />;
-      //   default:
-      //     return null;
-      // }
-    };
+    // const renderTab = () => {
+    //   const [currentTab, setCurrentTab] = useState("home");
+    //   switch (currentTab) {
+    //     case "home":
+    //       return <HomePage />;
+    //     case "about":
+    //       return <AboutPage />;
+    //     case "signup":
+    //       return <SignUpPage />;
+    //     case "login":
+    //       return <LoginPage />;
+    //     default:
+    //       return null;
+    //   }
+    // };
 
     return (
       <div>
