@@ -18,6 +18,7 @@ import Footer from "./components/Footer";
 
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
+import ContactPage from "./components/ContactPage";
 
 class App extends Component {
   constructor() {
@@ -50,6 +51,8 @@ function Switcharoo() {
         return <HomePage />;
       case "about":
         return <AboutPage />;
+      case "contact":
+        return <ContactPage />;
       default:
         return null;
     }
