@@ -63,9 +63,9 @@ class LoginForm extends Component {
             </div>
           </fieldset>
           <button type="submit" className="reset-btn">
-                <FaTelegramPlane />
-                <span className="icon-arrow-right2 outlined"></span>
-              </button>
+            <FaTelegramPlane />
+            <span className="icon-arrow-right2 outlined"></span>
+          </button>
           <div className="back-to-login">
             <a
               href="#"
@@ -225,7 +225,7 @@ class LoginForm extends Component {
               <span className="icon-arrow-right2 outlined"></span>
             </button>
           </div>
-          <div class="signup-position">
+          <div className="signup-position">
             <a
               className="no-member"
               href="#"
@@ -251,11 +251,11 @@ class LoginForm extends Component {
           onSubmit={this.onSubmit}
           bssize="large"
         >
-            <div className="close-btn-group">
-              <Button className="form-close-btn" onClick={this.props.onClose}>
-                X 
-              </Button>
-            </div>
+          <div className="close-btn-group">
+            <Button className="form-close-btn" onClick={this.props.onClose}>
+              X
+            </Button>
+          </div>
           <Modal.Header closeButton={true}>
             <h2>
               {this.state.mode === "login"
@@ -265,7 +265,7 @@ class LoginForm extends Component {
                 : "Password Reset"}
             </h2>
           </Modal.Header>
-          
+
           <Modal.Body>
             {this.state.mode === "login"
               ? this.renderLogin()
@@ -273,9 +273,7 @@ class LoginForm extends Component {
               ? this.renderRegister()
               : this.renderForgot()}
           </Modal.Body>
-          <Modal.Footer>
-            
-          </Modal.Footer>
+          <Modal.Footer></Modal.Footer>
         </Modal>
       </div>
     );

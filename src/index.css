@@ -6,6 +6,7 @@
   --primary-blue: #1f14b3;
   --secondary-blue: #0f9ad1;
   --btn-blue: #82b5f8;
+  --wills-gold: #b6b83d;
   --large-shadow: 2px 2px 0px rgba(83, 81, 102, 0.4);
   --small-shadow: 1px 1px 0px rgba(83, 81, 102, 0.4);
 }
@@ -80,12 +81,12 @@ main {
 .nav-links li:hover {
   display: flex;
   justify-content: space-between;
-  color: gold;
+  color: var(--wills-gold);
   transition: 0.3s;
 }
 
 nav .navActive {
-  color: gold;
+  color: var(--wills-gold);
   display: block;
 }
 
@@ -212,7 +213,11 @@ nav .navActive {
 }
 
 .contact-container h1 {
-  font-size: 32px;
+  color: #b6b83d;
+  box-shadow: var(--large-shadow);
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 3px;
   margin-top: 4rem;
   padding: 0 8rem;
 }
@@ -489,7 +494,7 @@ fieldset {
 .forgot a {
   font-size: 12px;
   letter-spacing: 1px;
-  color: gold;
+  color: var(--wills-gold);
   font-style: italic;
   text-decoration-line: none;
   text-align: center;
@@ -498,7 +503,7 @@ fieldset {
 
 .no-member {
   font-size: 20px;
-  color: gold;
+  color: var(--wills-gold);
   letter-spacing: 1px;
   text-decoration-line: none;
 }
@@ -529,7 +534,7 @@ fieldset {
 }
 
 .login-here a {
-  color: gold;
+  color: var(--wills-gold);
   text-decoration-line: none;
   letter-spacing: 1px;
 }
@@ -547,7 +552,7 @@ fieldset {
   border-radius: 4px;
   padding-top: 5px;
   padding-bottom: 0;
-  width: 86%;
+  width: 92%;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -592,7 +597,7 @@ fieldset {
 }
 
 .form-close-btn:hover {
-  color: gold;
+  color: var(--wills-gold);
   transition: .4s;
 }
 
@@ -664,7 +669,7 @@ input {
 
 .back-to-login a {
   font-size: 20px;
-  color: gold;
+  color: var(--wills-gold);
   letter-spacing: 1px;
   text-decoration-line: none;
 }
@@ -694,7 +699,7 @@ input {
   border-radius: 4px;
   padding-top: 5px;
   padding-bottom: 0;
-  width: 85%;
+  width: 92%;
   cursor: pointer;
 }
 
