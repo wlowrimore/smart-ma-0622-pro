@@ -57,9 +57,9 @@ export default function ContactPage() {
       className="contact-container contact"
       onSubmit={handleSubmit}
     >
-      <h1>Contact Me</h1>
-      <form id="contact-form">
-        <div className="form-group">
+      <form id="contact-form" className="main-form">
+        <h1>Contact Me</h1>
+        <div className="form-group-contact">
           <label htmlFor="name">Name</label>
           <input
             className="form-control"
@@ -71,7 +71,7 @@ export default function ContactPage() {
           />
         </div>
 
-        <div className="form-group">
+        <div className="form-group-contact">
           <label htmlFor="email">Email</label>
           <input
             className="form-control"
@@ -83,7 +83,7 @@ export default function ContactPage() {
           />
         </div>
 
-        <div className="form-group">
+        <div className="form-group-contact">
           <label htmlFor="message">Message:</label>
           <textarea
             className="form-control"
@@ -91,7 +91,6 @@ export default function ContactPage() {
             defaultValue={message}
             onBlur={handleBlank}
             rows="5"
-            placeholder="Message"
           />
           {errorMessage && <div className="wrong">Something Went Wrong!</div>}
           <button className="contact-btn" type="submit">

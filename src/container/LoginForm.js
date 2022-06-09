@@ -55,7 +55,7 @@ class LoginForm extends Component {
                   className="form-control"
                   placeholder="Enter your email"
                   required
-                  value={this.state.email}
+                  defaultValue={this.state.email}
                   onChange={this.onChange}
                 />
               </div>
@@ -105,7 +105,7 @@ class LoginForm extends Component {
                     className="form-control"
                     placeholder="Enter username or email"
                     required
-                    value={this.state.email}
+                    defaultValue={this.state.email}
                     onChange={this.onChange}
                   />
                 </div>
@@ -128,7 +128,7 @@ class LoginForm extends Component {
                       className="form-control"
                       placeholder="*****"
                       required
-                      value={this.state.password}
+                      defaultValue={this.state.password}
                       onChange={this.onChange}
                     />
                   </div>
@@ -179,7 +179,7 @@ class LoginForm extends Component {
                   className="form-control"
                   placeholder="Enter username or email"
                   onChange={this.onChange}
-                  value={this.state.email}
+                  defaultValue={this.state.email}
                   required
                 />
               </div>
@@ -202,7 +202,7 @@ class LoginForm extends Component {
                     placeholder="*****"
                     required
                     onChange={this.onChange}
-                    value={this.state.password}
+                    defaultValue={this.state.password}
                   />
                   <div className="forgot">
                     <a
